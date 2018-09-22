@@ -64,7 +64,7 @@ function getItem(ruta, id) {
                     ruta1 = "films"
                     pintar = ""
                     pelicula = JSON.parse(this.responseText);
-                    pintar = '<h1 class="titulo" >' + pelicula.title + '</h1><div class="row"><img height=500px width=800px src="https://timedotcom.files.wordpress.com/2017/05/star-wars_1023.jpg"></div><p><strong>Episodio: ' + pelicula.title + '</strong></p><p> ' + pelicula.opening_crawl + '</p><strong><a onclick="pasarpag()" href="page2.html">Ver mas ..</a></strong>'
+                    pintar = '<h1 class="titulo" >' + pelicula.title + '</h1><div class="row"><img height=500px width=800px src="img/movies/'+id+'.jpg"></div><p><strong>Episodio: ' + pelicula.title + '</strong></p><p> ' + pelicula.opening_crawl + '</p><strong><a onclick="pasarpag()" href="page2.html">Ver mas ..</a></strong>'
 
                     document.getElementById("gridMovies").innerHTML = pintar;
 
@@ -216,3 +216,9 @@ xhttp1.open("GET", url, true);
 xhttp1.send();
 }
 
+function imagencard(){
+    identificador = localStorage.getItem("id");
+    document.getElementById("imgcard").src =  "img/movies/"+identificador+".jpg";
+}
+
+imagencard();

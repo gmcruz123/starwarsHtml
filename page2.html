@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="starwarsintro.css">
+    <link rel="stylesheet" href="starwarsintro1.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <title>Document</title>
@@ -30,7 +30,7 @@
     <div class="container">
         <div class="accordion" id="accordionExample">
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div id="botondetalle" class="card-header" id="headingOne">
                     <h5 class="mb-0">
                         <button class="btn btn-link" onclick="getMovie(0)" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             Personajes
@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div id="botondetalle" class="card-header" id="headingTwo">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed"  onclick="getMovie(2)" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                         aria-controls="collapseTwo">
@@ -65,15 +65,15 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" onclick="getMovie(3)" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+            <div id="botondetalle" class="card-header" id="headingThree">
+                <h5  class="mb-0">
+                    <button  class="btn btn-link collapsed" onclick="getMovie(3)" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
                         aria-controls="collapseThree">
                         Naves
                     </button>
                 </h5>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div id="collapseThree" class="collapse" color="#000" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
                     <div class="container">
                         <div id="naves"></div>
@@ -82,7 +82,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingFour">
+            <div id="botondetalle" class="card-header" id="headingFour">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" onclick="getMovie(4)" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
                         aria-controls="collapseFour">
@@ -99,8 +99,8 @@
             </div>
         </div>
         <div class="card">
-            <div class="card-header" id="headingFive">
-                <h5 class="mb-0">
+            <div id="botondetalle" class="card-header" id="headingFive">
+                <h5 id="titulocolor" class="mb-0">
                     <button class="btn btn-link collapsed" onclick="getMovie(1)" type="button" data-toggle="collapse" data-target="#collapseFive"
                         aria-expanded="false" aria-controls="collapseFive">
                         Especies
